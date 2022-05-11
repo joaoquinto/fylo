@@ -1,6 +1,21 @@
+$very-dark-blue = hsl(243, 87%, 12%)
+$desatured-blue = hsl(238, 22%, 44%)
+$bright-blue = hsl(224, 93%, 58%)
+$moderate-cyan = hsl(170, 45%, 43%)
+$light-grayish-blue =  hsl(240, 75%, 98%)
+$light-gray = hsl(0, 0%, 75%)
+$titles = 'Raleway', sans-serif
+$title-400 = 400
+$title-700 = 700
+$bodies = 'Open Sans', sans-serif
+$bodies-400 = 400
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
 *
   margin: 0
   padding: 0
+
 
 img
     display: block
@@ -12,3 +27,126 @@ ul
 
 a
   text-decoration: none
+
+header
+  width calc(100% - 40px)
+  margin: 60px 20px
+
+.container-nav
+  display: flex
+  justify-content: space-between
+  align-items: center
+  & .logo-nav
+    flex: 1
+    max-width: 100px
+    max-height: 100px
+    
+.container-menu
+  display: flex
+  & li + li
+    margin-left: 10px
+  & li
+      padding: 5px
+  & li
+      a
+        font-family $titles 
+        color: $very-dark-blue
+        transition: color .2s
+        font-weight: 600
+        
+        &:hover
+          color: $desatured-blue
+
+
+.container-all-your-files
+  display: flex
+  flex-direction: column
+  margin: 100px auto
+  align-items: center
+  width 80%
+  & .img-all-your-files
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: top right
+      width 300px
+.item-all-your-files
+  margin-top: 30px
+  text-align center
+  & .title-all-your-files
+    color: $very-dark-blue
+    font-family $titles
+    font-weight $title-700
+    margin: 20px 0
+  & p
+    color: $very-dark-blue
+    font-family $bodies
+    font-weight $bodies-400
+    margin: 20px 0
+  & form
+    display: flex
+    flex-direction: column
+    &
+      @media (min-width:1300px)
+        flex-direction: row
+        align-items:baseline
+    & input
+      margin-bottom: 15px
+      & 
+        @media (min-width: 1300px)
+          flex: 30%
+          margin-bottom: 0
+
+    & input,button
+      border-radius: 5px
+      padding: 20px 10px
+    & button
+      background-color: $bright-blue 
+      border-color: transparent
+      box-shadow: 0 0 1.5em $light-gray
+      color: #fff
+      cursor pointer
+      font-family $titles
+      font-weight $title-700
+      transition: opacity .1s
+      opacity: 1
+      &:hover
+        opacity: 0.8
+      & 
+        @media (min-width: 1300px)
+            flex: calc(100px - 20px)
+            margin-left: 20px
+            margin-bottom: 0
+    & input
+      border:1px solid $very-dark-blue
+      &:invalid
+        border-color: red
+    
+@media (min-width:1300px)
+    .container-all-your-files
+      justify-content: space-between
+      flex-direction: row
+      & .item-all-your-files
+        order 0
+        flex: calc(50% - 80px)
+        margin-right: 80px
+        text-align: left
+        margin-top: 0
+      & .title-all-your-files
+          font-size: 2.5rem
+      & .img-all-your-files
+          order 1
+          flex: 50%
+
+@media (min-width: 1000px)
+  header
+    width 80%
+    margin: 60px auto
+
+  .container-nav
+    display: flex
+    justify-content: space-between
+    align-items: center
+    & .logo-nav
+      flex: 1
+      max-width: 150px
+      max-height: 150px

@@ -11,7 +11,7 @@
   <meta name="author" content="João Victor Oliveira Pereira, github: @joaoquinto">
   <!-- Meta tags de compartilhamento -->
   <!-- Metatag Facebook, Whatsapp e instagram -->
-  <meta property="og:url" content="" />
+  <meta property="og:url" content="https://joaoquinto.github.io/fylo/" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Frontend Mentor | Fylo landing page with two column layout" />
   <meta property="og:description" content="Fylo stores your most important files in one secure location.Access them wherever you need, share and collaborate with friends,
@@ -26,7 +26,15 @@
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-5BVCKFD5V3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
+    gtag('config', 'G-5BVCKFD5V3');
+  </script>
   <style>
     .attribution {
       font-size: 11px;
@@ -40,15 +48,33 @@
 </head>
 
 <body>
-
-  <header class="container-menu">
-    <img src="./assets/images/logo.svg" alt="" class="logo-menu">
-    <ul class="menu">
-      <li class="item-menu"><a href="#">Features</a></li>
-      <li class="item-menu"><a href="#">Team</a></li>
-      <li class="item-menu"><a href="#">Sign In</a></li>
-    </ul>
+  <header>
+    <nav class="container-nav">
+      <img src="./assets/images/logo.svg" alt="Logo marca da Fylo" class="logo-nav">
+      <ul class="container-menu">
+        <li class="item-menu"><a href="#">Features</a></li>
+        <li class="item-menu"><a href="#">Team</a></li>
+        <li class="item-menu"><a href="#">Sign In</a></li>
+      </ul>
+    </nav>
   </header>
+  <section class="container-all-your-files">
+    <div class="img-all-your-files">
+      <img src="./assets/images/illustration-1.svg" alt="">
+    </div>
+    <div class="item-all-your-files">
+      <h1 class="title-all-your-files">All your files in one secure <br> location, accessible anywhere.</h1>
+      <p>
+        Fylo stores your most important files in one secure location.
+        Access them wherever you need, share and collaborate with friends,
+        family, and co-workers.
+      </p>
+      <form action="" method="post" class="container-email">
+        <input type="email" name="email" id="" placeholder="Enter your email...">
+        <button>Get Started</button>
+      </form>
+    </div>
+  </section>
 
 
   <footer>

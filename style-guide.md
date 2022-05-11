@@ -37,6 +37,7 @@ The designs were created to the following widths:
 - Weights: 400
 
 ```javascript
+
   Features
   Team
   Sign In
