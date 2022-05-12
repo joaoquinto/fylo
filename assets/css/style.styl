@@ -77,10 +77,10 @@ header
     font-family $titles
     font-weight $title-700
     margin: 20px 0
+    line-height: 1.5
   & p
     color: $very-dark-blue
     font-family $bodies
-    font-weight $bodies-400
     margin: 20px 0
   & form
     display: flex
@@ -150,3 +150,116 @@ header
       flex: 1
       max-width: 150px
       max-height: 150px
+
+.stay-productive
+  background-color: $light-grayish-blue
+  padding: 100px 0
+  border-radius: 63% 75% 10% 10% / 25% 22% 10% 10% 
+
+.container-stay-productive
+  display: flex
+  flex-direction: column
+  width 80%
+  justify-content: center
+  align-items: center
+  margin: 0 auto
+  & .img-stay-productive
+      background-size: cover
+      background-repeat: no-repeat
+      background-position: top right
+      width 300px
+  & .item-stay-productive .title-stay-productive
+    font-family: $titles
+    font-size: 1.5rem
+    font-weight $title-700
+    text-align: center
+    color: $very-dark-blue
+    margin: 80px 0 30px
+  & p
+      font-family $bodies
+      font-size 0.9rem
+      & + p
+        margin-top: 20px
+  & .call-to-action-stay-productive
+    display: block
+    font-family $titles
+    font-weight $title-700
+    font-size 0.9rem
+    max-width: 170px
+    text-align: center
+    color: $moderate-cyan
+    border-bottom: 1px solid $moderate-cyan
+    margin: 30px auto 0 auto
+    padding: 5px 0
+    &::after
+      content: url(../images/icon-arrow.svg)
+      width 5px
+      height: @width
+      margin-left: @width
+      position: relative
+      bottom: -3px
+  & .card
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    margin: 50px auto
+    border-radius: 4px
+    max-width: 320px
+    height: 250px
+    background-color: #fff
+    padding: 0px 30px
+    box-shadow: 0 0 1.5em $light-gray
+    & p
+      line-height: 1.5
+      color: $very-dark-blue
+    &::before
+        content: url(../images/icon-quotes.svg)
+        position relative
+        right: 48%
+    &
+      ul
+        margin-top: 20px
+        align-self: flex-start
+        display: flex
+        justify-content: baseline
+      & img
+        width 30px
+        height: @width
+        border-radius: 50%
+      & .info h2
+                font-family $titles
+                font-size 0.9rem
+                color: $very-dark-blue
+        & li + li
+          margin-left: 10px
+        & .info p
+          margin-top: 3px
+          font-family $bodies
+          font-size 0.7rem
+          font-weight $bodies-400
+          color: $very-dark-blue 
+
+@media (min-width:1300px)
+  .container-stay-productive
+    flex-direction: row
+    align-items: flex-start
+    & .item-stay-productive
+        order 0
+        flex: 60%
+        & .title-stay-productive
+           text-align left
+           font-size: 2.5rem
+        & .item-paragraph
+            max-width: 55%
+            color: $very-dark-blue
+        & .card
+          margin-left: 0
+          margin-right: 0
+    & .call-to-action-stay-productive
+        margin-left: 0
+        margin-right: 0
+    & .img-stay-productive
+        margin-top: 100px
+        order: 1
+        flex: 40%
