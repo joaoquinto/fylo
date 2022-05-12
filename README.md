@@ -31,8 +31,6 @@
 
 <img src="./assets/screenshots/Desktop.png" width="1280px">
 
-<img src="./assets/screenshots/Desktop-lg.png" width="1280px">
-
 ## Stack utilizada
 
 - Front-end: HTML5, CSS3, stylus
