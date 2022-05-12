@@ -236,6 +236,7 @@ header {
   content: url("../images/icon-quotes.svg");
   position: relative;
   right: 48%;
+  height: 25px;
 }
 .container-stay-productive .card ul {
   margin-top: 20px;
