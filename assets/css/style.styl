@@ -154,7 +154,7 @@ header
 .stay-productive
   background-color: $light-grayish-blue
   padding: 100px 0
-  border-radius: 63% 75% 0% 0% / 25% 22% 0% 0% 
+  border-radius: 134% 145% 0% 0%/25% 22% 0% 0% 
 
 .container-stay-productive
   display: flex
@@ -191,6 +191,10 @@ header
     border-bottom: 1px solid $moderate-cyan
     margin: 30px auto 0 auto
     padding: 5px 0
+    opacity 1
+    transition: opacity .1s
+    &:hover
+      opacity 0.5
     &::after
       content: url(../images/icon-arrow.svg)
       width 5px
@@ -215,9 +219,11 @@ header
       color: $very-dark-blue
     &::before
         content: url(../images/icon-quotes.svg)
+        width 15px
+        height: 10px
         position relative
-        right: 48%
-        padding: 10px 5px
+        right: 47.2%
+        padding: 10px 0
     &
       ul
         margin-top: 20px
@@ -240,6 +246,58 @@ header
           font-size 0.7rem
           font-weight $bodies-400
           color: $very-dark-blue 
+
+
+.get-early-access
+  background-color: $desatured-blue
+  padding: 80px 0
+.container-get-early-access
+  display: flex
+  flex-direction: column
+  margin: 0 auto
+  width 80%
+  & .title-get-early-access
+      color: $light-grayish-blue
+      font-family $titles
+      font-weight: $title-700
+      text-align: center
+      margin-bottom: 20px
+  & .paragraph-get-early-access
+      color: $light-grayish-blue
+      font-family $bodies
+      font-weight $bodies-400
+      text-align: center
+      margin-bottom: 20px
+  & .container-form
+      display: flex
+      flex-direction: column
+      margin: 0 auto
+      width 70vw
+    & input, button
+        padding: 13px 10px
+        border-radius: 2px
+        border-color: transparent
+        box-shadow: 0 0 0.1em transparent
+    & input:invalid
+            border-color: red
+            opacity 0.8
+    &  ::placeholder
+       color: $light-gray
+       font-family $bodies
+    & button
+        margin-top: 20px
+        background-color: $bright-blue
+        font-family $titles
+        font-weight $title-700
+        cursor pointer
+        color #fff
+        box-shadow: 0 0 0.1em $bright-blue
+        opacity 1
+        transition: opacity .1s
+        &:hover
+          opacity: 0.8
+        
+        
 
 @media (min-width:1300px)
   .container-stay-productive
@@ -264,3 +322,26 @@ header
         margin-top: 100px
         order: 1
         flex: 40%
+  .stay-productive
+    background-color: $light-grayish-blue
+    padding: 100px 0
+    border-radius: 63% 75% 0% 0% / 25% 22% 0% 0%
+  .container-get-early-access
+    flex-direction: row
+    justify-content: baseline
+    & .title-get-early-access
+        text-align: left
+        margin-bottom: 20px
+    & .paragraph-get-early-access
+        text-align: left
+        max-width 500px
+    
+    & .container-get-early-access-text,
+      .form-get-early-access
+        flex: 50%
+      & .container-form
+        width 100%
+      & input
+          width 80%
+      & button
+          width 40%
