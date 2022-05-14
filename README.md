@@ -25,11 +25,11 @@
 
 ### Mobile Screenshot
 
-<img src="./assets/screenshots/Mobile3v.png" width="414px">
+<img src="./assets/screenshots/Mobile4v.png" width="414px">
 
 ### Desktop Screenshot
 
-<img src="./assets/screenshots/Desktop3v.png" width="1280px">
+<img src="./assets/screenshots/Desktop4v.png" width="1280px">
 
 ## Stack utilizada
 

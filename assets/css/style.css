@@ -239,8 +239,6 @@ header {
 }
 .container-stay-productive .card::before {
   content: url("../images/icon-quotes.svg");
-  width: 15px;
-  height: 10px;
   position: relative;
   right: 47.2%;
   padding: 10px 0;
